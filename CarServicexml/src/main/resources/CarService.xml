@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<carService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="CarService.xsd">
+    <customers>
+        <customer>
+                <id>1</id>
+            <fisrtName>Alex</fisrtName>
+            <lastName>Morgan</lastName>
+            <phoneNumber>303-587-9883</phoneNumber>
+            <address>336 S Alexandrea</address>
+            <appointments>
+                <appointment>
+                    <id>111</id>
+                    <appointmentDate>2023-06-24</appointmentDate>
+                    <serviceType>Oil Change</serviceType>
+                </appointment>
+                <appointment>
+                    <id>112</id>
+                    <appointmentDate>2023-06-25</appointmentDate>
+                    <serviceType>Tire change</serviceType>
+                </appointment>
+            </appointments>
+            <cars>
+                <car>
+                    <id>99</id>
+                    <licensePlate>CDE876</licensePlate>
+                    <make>BMW</make>
+                    <year>2023</year>
+                </car>
+            </cars>
+            <invoices>
+                <invoice>
+                    <id>1234</id>
+                    <totalAmount>70</totalAmount>
+                    <date>2023-06-24</date>
+                </invoice>
+                <invoice>
+                    <id>1256</id>
+                    <totalAmount>100</totalAmount>
+                    <date>2023-06-24</date>
+                </invoice>
+            </invoices>
+        </customer>
+    </customers>
+</carService>

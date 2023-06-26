@@ -1,0 +1,44 @@
+{
+  "customers" : [
+    {
+    "id": 1,
+    "firstName": "Alex",
+    "lastName": "Morgan",
+    "phoneNumber": "303-587-9883",
+    "address": "336 S Alexandrea",
+      "appointment":[
+        {
+          "id" : 111,
+          "appointmentDate" : "2023-06-24",
+          "serviceType": "Oil Change"
+        },
+      {
+      "id" :"112",
+      "appointmentDate": "2023-06-25",
+      "serviceType": "Tire change"
+      }
+        ],
+
+        "car": [
+      {
+        "id":"99",
+        "licensePlate":"CDE876",
+        "make":"BMW",
+        "year":"2023"
+      }
+          ],
+        "invoice" :[
+          {
+        "id":"1234",
+        "totalAmount":"70",
+        "date":"2023-06-24"
+        },
+          {
+        "id":"1256",
+        "totalAmount":"100",
+        "date":"2023-06-24"
+          }
+          ]
+        }
+      ]
+  }

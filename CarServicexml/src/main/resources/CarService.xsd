@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CarService">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customer" type="CustomerType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="CustomerType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:integer"/>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="phoneNumber" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="appointments" type="AppointmentListType"/>
+            <xs:element name="cars" type="CarListType"/>
+            <xs:element name="invoices" type="InvoiceListType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AppointmentType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="carId" type="xs:int"/>
+            <xs:element name="appointmentDate" type="xs:date"/>
+            <xs:element name="serviceType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CarType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="licensePlate" type="xs:string"/>
+            <xs:element name="make" type="xs:string"/>
+            <xs:element name="year" type="xs:int"/>
+<!--            <xs:element name="warranty" type="WarrantyType"/>-->
+<!--            <xs:element name="serviceRecordList" type="ServiceRecordListType"/>-->
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="InvoiceType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="totalAmount" type="xs:double"/>
+            <xs:element name="date" type="xs:date"/>
+<!--            <xs:element name="paymentList" type="PaymentListType"/>-->
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AppointmentListType">
+        <xs:sequence>
+            <xs:element name="appointment" type="AppointmentType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CarListType">
+        <xs:sequence>
+            <xs:element name="car" type="CarType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="InvoiceListType">
+        <xs:sequence>
+            <xs:element name="invoice" type="InvoiceType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+<!--    <xs:complexType name="ServiceRecordListType">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="serviceRecord" type="ServiceRecordType" maxOccurs="unbounded"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+<!--    <xs:complexType name="PaymentListType">-->
+<!--        <xs:sequence>-->
+<!--            <xs:element name="payment" type="PaymentType" maxOccurs="unbounded"/>-->
+<!--        </xs:sequence>-->
+<!--    </xs:complexType>-->
+
+</xs:schema>
