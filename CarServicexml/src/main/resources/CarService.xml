@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<carService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:noNamespaceSchemaLocation="CarService.xsd">
     <customers>
         <customer>
                 <id>1</id>
@@ -42,4 +40,3 @@
             </invoices>
         </customer>
     </customers>
-</carService>

@@ -5,60 +5,150 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.laba.solvd</groupId>
-    <artifactId>CarServicePart2</artifactId>
+    <artifactId>CarServicexml</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-<!--        <propertiy>-->
-<!--            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-<!--        </propertiy>-->
 
-        <propertiy>
-            <maven.compiler.source>11</maven.compiler.source>
-            <maven.compiler.target>11</maven.compiler.target>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        </propertiy>
-<!--        <maven.compiler.source>11</maven.compiler.source>-->
-<!--        <maven.compiler.target>11</maven.compiler.target>-->
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+
     <dependencies>
-        <!--        <dependency>-->
-        <!--            <groupId>javax.xml.bind</groupId>-->
-        <!--            <artifactId>jaxb-api</artifactId>-->
-        <!--            <version>2.3.1</version>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.12</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>commons-io</groupId>-->
-        <!--            <artifactId>commons-io</artifactId>-->
-        <!--            <version>2.11.0</version>-->
-        <!--        </dependency>-->
 
-                <dependency>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-lang3</artifactId>
-                    <version>3.12.0</version>
-                </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
 
-                <dependency>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                    <version>3.8.1</version>
-                    <scope>test</scope>
-                </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.13</version>
+        </dependency>
+
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>2.3.0</version>
+            <version>2.3.1</version>
         </dependency>
 
-<!--                <dependency>-->
-<!--                    <groupId>com.fasterxml.jackson.dataformat</groupId>-->
-<!--                    <artifactId>jackson-dataformat-xml</artifactId>-->
-<!--                    <version>2.13.0</version>-->
-<!--                </dependency>-->
+
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0"-->
+<!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">-->
+<!--    <modelVersion>4.0.0</modelVersion>-->
+
+<!--    <groupId>com.laba.solvd</groupId>-->
+<!--    <artifactId>CarServicexml</artifactId>-->
+<!--    <version>1.0-SNAPSHOT</version>-->
+<!--    <properties>-->
+
+
+<!--        <propertiy>-->
+<!--            <maven.compiler.source>11</maven.compiler.source>-->
+<!--            <maven.compiler.target>11</maven.compiler.target>-->
+<!--            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        </propertiy>-->
+<!--&lt;!&ndash;        <maven.compiler.source>11</maven.compiler.source>&ndash;&gt;-->
+<!--&lt;!&ndash;        <maven.compiler.target>11</maven.compiler.target>&ndash;&gt;-->
+<!--    </properties>-->
+<!--    <dependencies>-->
+<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <groupId>javax.xml.bind</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <artifactId>jaxb-api</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <version>2.3.1</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.12</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <groupId>commons-io</groupId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <artifactId>commons-io</artifactId>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <version>2.11.0</version>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
+
+<!--                <dependency>-->
+<!--                    <groupId>org.apache.commons</groupId>-->
+<!--                    <artifactId>commons-lang3</artifactId>-->
+<!--                    <version>3.12.0</version>-->
+<!--                </dependency>-->
+
+<!--                <dependency>-->
+<!--                    <groupId>junit</groupId>-->
+<!--                    <artifactId>junit</artifactId>-->
+<!--                    <version>3.8.1</version>-->
+<!--                    <scope>test</scope>-->
+<!--                </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>javax.xml.bind</groupId>-->
+<!--            <artifactId>jaxb-api</artifactId>-->
+<!--            <version>2.3.0</version>-->
+<!--        </dependency>-->
+
+<!--&lt;!&ndash;                <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <groupId>com.fasterxml.jackson.dataformat</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <artifactId>jackson-dataformat-xml</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <version>2.13.0</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                </dependency>&ndash;&gt;-->
+<!--    </dependencies>-->
+<!--</project>-->

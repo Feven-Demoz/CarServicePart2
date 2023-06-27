@@ -36,34 +36,6 @@ public class XMLValidator {
     }
 }
 
-//
-//    public static void main(String[] args) {
-//        String xmlFile = "src/main/resources/CarService.xml";
-//        String xsdFile = "src/main/resources/CarService.xsd";
-//        try {
-//            boolean isValid = validateXMLAgainstXSD(xmlFile, xsdFile);
-//            System.out.println("XML validation result: " + isValid);
-//        } catch (SAXException e){
-//            e.printStackTrace();
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }
-//    }
 
-//    private static boolean validateXMLAgainstXSD(String xmlFile, String xsdFile) throws SAXException, IOException {
-//
-//        SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-//
-//        File schemaFile = new File(xsdFile);
-//        Schema schema = schemaFactory.newSchema(schemaFile);
-//
-//        Validator validator = schema.newValidator();
-//
-//        Source xmlSource = new StreamSource(new File(xmlFile));
-//
-//        validator.validate(xmlSource);
-//
-//        return true;
-//    }
 
 

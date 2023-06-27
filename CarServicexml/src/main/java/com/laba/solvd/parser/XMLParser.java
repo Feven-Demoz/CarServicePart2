@@ -14,7 +14,7 @@ public class XMLParser {
                 File file = new File(xmlFile);
                 Customer customer = (Customer) unmarshaller.unmarshal(file);
 
-                System.out.println(Customer.getCustomer().get(0).getFirstName());
+                System.out.println(Customer.getFirstName());
 
             } catch (JAXBException e) {
                 e.printStackTrace();
